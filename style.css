@@ -331,6 +331,33 @@ h1 {
   text-underline-offset: 4px;
 }
 
+.inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.inline-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--blue);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.inline-links a:hover {
+  border-color: var(--cyan);
+  background: #fff;
+}
+
 .research-line p,
 .project-card p,
 .interest-card p,
