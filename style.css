@@ -404,6 +404,21 @@ h1 {
   overflow: hidden;
 }
 
+.physim-card {
+  min-height: 330px;
+  overflow: hidden;
+}
+
+.project-preview {
+  display: block;
+  width: calc(100% + 48px);
+  height: 150px;
+  margin: -24px -24px 22px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  opacity: 0.9;
+}
+
 .project-logo {
   position: absolute;
   right: 22px;
@@ -502,6 +517,32 @@ h1 {
 .interest-card {
   padding: 22px;
   background: linear-gradient(180deg, #fff 0%, var(--warm-soft) 180%);
+}
+
+.article-preview {
+  display: grid;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 16px;
+  border: 1px solid rgba(23, 61, 109, 0.14);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 241, 232, 0.55)),
+    repeating-linear-gradient(0deg, rgba(20, 32, 51, 0.05) 0 1px, transparent 1px 9px);
+}
+
+.article-preview span {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--warm);
+}
+
+.article-preview strong {
+  color: var(--text);
+  line-height: 1.25;
 }
 
 .contact-panel {
@@ -631,6 +672,12 @@ h1 {
   .project-logo {
     width: 54px;
     height: 54px;
+  }
+
+  .project-preview {
+    width: calc(100% + 40px);
+    height: 130px;
+    margin: -20px -20px 20px;
   }
 
   .source-relay-card p,
