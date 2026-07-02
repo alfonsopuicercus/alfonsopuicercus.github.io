@@ -431,7 +431,8 @@ h1 {
   box-shadow: 0 8px 28px rgba(20, 32, 51, 0.04);
 }
 
-.source-relay-card {
+.source-relay-card,
+.vault-card {
   overflow: hidden;
 }
 
@@ -456,29 +457,11 @@ h1 {
   background: #03040a;
 }
 
-.vault-card {
-  overflow: hidden;
-}
-
+.source-relay-preview,
 .vault-preview {
   object-position: center top;
   border-bottom-color: rgba(203, 215, 227, 0.9);
   opacity: 1;
-}
-
-.project-logo {
-  position: absolute;
-  right: 22px;
-  bottom: 18px;
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
-  box-shadow: 0 14px 28px rgba(20, 32, 51, 0.12);
-}
-
-.source-relay-card p,
-.source-relay-card .tag-list {
-  padding-right: 78px;
 }
 
 .project-card.featured {
@@ -710,11 +693,6 @@ h1 {
     text-align: left;
   }
 
-  .project-logo {
-    width: 54px;
-    height: 54px;
-  }
-
   .project-preview {
     width: calc(100% + 40px);
     height: 130px;
@@ -723,11 +701,6 @@ h1 {
 
   .physim-logo-preview {
     padding: 16px 28px;
-  }
-
-  .source-relay-card p,
-  .source-relay-card .tag-list {
-    padding-right: 62px;
   }
 
   .footer-inner {
