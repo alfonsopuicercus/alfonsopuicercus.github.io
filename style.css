@@ -456,6 +456,16 @@ h1 {
   background: #03040a;
 }
 
+.vault-card {
+  overflow: hidden;
+}
+
+.vault-preview {
+  object-position: center top;
+  border-bottom-color: rgba(203, 215, 227, 0.9);
+  opacity: 1;
+}
+
 .project-logo {
   position: absolute;
   right: 22px;
