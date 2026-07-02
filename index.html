@@ -3,90 +3,229 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alfonso Puicercus — PhD student at CERN working on fast silicon sensors for particle physics." />
+  <meta name="description" content="Alfonso Puicercus — CERN PhD student working on fast 3D silicon sensors, physics simulations, and small tools for making complex systems usable." />
   <title>Alfonso Puicercus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="site-shell">
+    <header class="site-hero">
+      <nav class="topbar" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Alfonso Puicercus home">AP</a>
+        <div class="nav-links">
+          <a href="#research">Research</a>
+          <a href="#projects">Projects</a>
+          <a href="#outside">Outside</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
 
-  <div class="container">
+      <div class="hero-grid" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">CERN · LHCb VELO Upgrade 2 · Fast silicon sensors</p>
+          <h1>Alfonso Puicercus</h1>
+          <p class="hero-title">PhD student building timing-aware detector simulations and small tools that make complicated systems easier to use.</p>
+          <p class="hero-text">My research sits between 3D silicon sensor design, TCAD electric-field simulation, Garfield++ signal modelling, and the experimental reality of characterisation and test beams. Outside the lab, I like building physics simulations, personal automation systems, and things that turn messy workflows into something you can actually touch.</p>
+          <div class="hero-actions" aria-label="Primary links">
+            <a href="https://github.com/alfonsopuicercus" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://ch.linkedin.com/in/alfonso-puicercus" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="mailto:alfonso.puicercus@gmail.com">Email</a>
+          </div>
+        </div>
 
-    <!-- Hero -->
-    <header class="hero">
-      <h1>Alfonso Puicercus</h1>
-      <p class="title">PhD student · CERN</p>
-      <p class="tagline">Building the next generation of silicon sensors for particle physics.</p>
-      <div class="hero-links">
-        <a href="https://github.com/alfonsopuicercus" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://ch.linkedin.com/in/alfonso-puicercus" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:alfonso.puicercus@gmail.com">Email</a>
+        <aside class="signal-card" aria-label="Research snapshot">
+          <span class="signal-line" aria-hidden="true"></span>
+          <p class="signal-label">Current focus</p>
+          <h2>Fast 3D sensors for high-rate particle tracking</h2>
+          <p>Predicting how geometry, fields, and charge transport shape the timing response of silicon detectors before devices are manufactured and tested.</p>
+          <dl class="signal-facts">
+            <div>
+              <dt>Tools</dt>
+              <dd>TCAD · Garfield++ · Python</dd>
+            </div>
+            <div>
+              <dt>Context</dt>
+              <dd>LHCb · VELO · CERN EP R&amp;D</dd>
+            </div>
+          </dl>
+        </aside>
       </div>
     </header>
 
-    <!-- What I work on -->
-    <section id="research">
-      <h2>What I work on</h2>
-      <p>
-        Particle physics experiments need detectors that can tell apart two particles arriving mere picoseconds apart — and do it millions of times per second. My work is about pushing silicon sensors closer to that limit.
-      </p>
-      <p>
-        I run TCAD simulations to model the electric fields and charge collection inside 3D silicon sensors, then feed those results into Garfield++ to simulate how a real particle would move through the device and what signal it would leave behind. Together, these tools let me predict the spatial and time resolution of a sensor before it's ever manufactured.
-      </p>
-      <p>
-        I'm doing this as part of the LHCb experiment at CERN, where a new vertex detector is being designed that will need to track particles with better timing than anything that's been built before. The goal is to understand which sensor geometries and configurations get us there.
-      </p>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Projects &amp; Publications</h2>
-      <div class="projects">
-
-        <div class="card">
-          <div class="card-header">
-            <h3>Fast 3D Silicon Sensors for LHCb VELO Upgrade II</h3>
-            <span class="badge">Presented</span>
-          </div>
-          <p>Poster presented at TREDI 2026 — 21st Trento Workshop on Advanced Silicon Radiation Detectors. Perugia, February 2026.</p>
+    <main>
+      <section class="section research-lines" id="research">
+        <div class="section-heading">
+          <p class="eyebrow">Research lines</p>
+          <h2>From sensor geometry to induced signal.</h2>
+          <p>I work on the chain that connects a proposed 3D silicon sensor design to the signal a particle would leave in a future vertex detector.</p>
         </div>
 
-        <div class="card">
-          <div class="card-header">
-            <h3>JINST Proceedings Paper</h3>
-            <span class="badge preparation">In preparation</span>
-          </div>
-          <p>Writing up simulation results for the Journal of Instrumentation as a proceedings contribution from TREDI 2026. Expected May 2026.</p>
+        <div class="research-grid">
+          <article class="research-line">
+            <span class="line-index">01</span>
+            <h3>TCAD device simulation</h3>
+            <p>Parametrised 3D sensor models, electric-field maps, depletion behaviour, and charge collection studies for candidate geometries.</p>
+          </article>
+          <article class="research-line">
+            <span class="line-index">02</span>
+            <h3>Garfield++ signal modelling</h3>
+            <p>Transporting charge through simulated fields to estimate induced current, timing response, and spatial performance before fabrication.</p>
+          </article>
+          <article class="research-line">
+            <span class="line-index">03</span>
+            <h3>Characterisation context</h3>
+            <p>Connecting simulation assumptions to OPTIMA, Timepix4, laser and test-beam work, and production discussions with sensor partners.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section selected-work">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Detector R&amp;D, papers, and simulation infrastructure.</h2>
         </div>
 
-        <div class="card">
-          <div class="card-header">
-            <h3>TCAD Simulation Suite</h3>
-            <span class="badge ongoing">Ongoing</span>
-          </div>
-          <p>Custom simulation pipeline for 3D silicon sensor geometries — parametrised models, electric field extraction, and Garfield++ integration for timing studies.</p>
+        <div class="work-list">
+          <article class="work-card">
+            <div>
+              <p class="work-meta">Presented · TREDI 2026</p>
+              <h3>Fast 3D Silicon Sensors for LHCb VELO Upgrade II</h3>
+            </div>
+            <p>Poster work on simulation-driven development of 3D silicon sensors for the timing requirements of a future LHCb vertex detector.</p>
+          </article>
+          <article class="work-card">
+            <div>
+              <p class="work-meta">In preparation · JINST proceedings</p>
+              <h3>Simulation results for fast 3D sensor studies</h3>
+            </div>
+            <p>Proceedings contribution gathering current TCAD and Garfield++ results from the TREDI work.</p>
+          </article>
+          <article class="work-card">
+            <div>
+              <p class="work-meta">Ongoing · TCAD / Garfield++</p>
+              <h3>3D sensor simulation suite</h3>
+            </div>
+            <p>Parametrised device models, field extraction, and downstream signal simulations for comparing sensor layouts and operating conditions.</p>
+          </article>
+          <article class="work-card">
+            <div>
+              <p class="work-meta">Previous work · Velopix</p>
+              <h3>Velopix detector characterisation</h3>
+            </div>
+            <p>Analysis framework and detector characterisation work from my master's thesis, connecting measured behaviour to physical parameters.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section built-projects" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Built for curiosity</p>
+          <h2>Side projects where physics, automation, and personal systems meet.</h2>
+          <p>Most of my projects start from the same itch: make an abstract system visible, controllable, or easier to reason about.</p>
         </div>
 
-      </div>
-    </section>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-topline">
+              <h3><a href="https://github.com/alfonsopuicercus/physicslab" target="_blank" rel="noopener">Physim</a></h3>
+              <span>Physics simulations</span>
+            </div>
+            <p>Interactive browser simulations paired with Physim Lab, a Python desktop framework for research-grade models and shared `.physim` scenarios.</p>
+            <div class="tag-list" aria-label="Physim stack">
+              <span>HTML/CSS/JS</span>
+              <span>Python</span>
+              <span>Cloudflare</span>
+            </div>
+          </article>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Feel free to reach out — whether it's about silicon sensors, simulations, or anything in between.</p>
-      <div class="contact-links">
-        <a href="mailto:alfonso.puicercus@gmail.com">alfonso.puicercus@gmail.com</a>
-        <a href="https://github.com/alfonsopuicercus" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://ch.linkedin.com/in/alfonso-puicercus" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </section>
+          <article class="project-card">
+            <div class="project-topline">
+              <h3><a href="https://github.com/alfonsopuicercus/source-relay" target="_blank" rel="noopener">SourceRelay</a></h3>
+              <span>Personal data bridge</span>
+            </div>
+            <p>A local macOS bridge that turns Calendar, Things 3, and Obsidian into one clean API for personal dashboards.</p>
+            <div class="tag-list" aria-label="SourceRelay stack">
+              <span>Swift</span>
+              <span>macOS</span>
+            </div>
+          </article>
 
+          <article class="project-card">
+            <div class="project-topline">
+              <h3><a href="https://github.com/alfonsopuicercus/groundstation" target="_blank" rel="noopener">Groundstation</a></h3>
+              <span>Automation</span>
+            </div>
+            <p>A plugin-based Telegram command centre for system monitoring, local LLM control, job automation, and notifications.</p>
+            <div class="tag-list" aria-label="Groundstation stack">
+              <span>Python</span>
+              <span>Telegram</span>
+              <span>Ollama</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-topline">
+              <h3><a href="https://github.com/alfonsopuicercus/claude-monitor" target="_blank" rel="noopener">Claude Monitor</a></h3>
+              <span>macOS utility</span>
+            </div>
+            <p>A Dynamic Island-style overlay for Claude Code sessions, built as a small native utility for keeping agent work visible.</p>
+            <div class="tag-list" aria-label="Claude Monitor stack">
+              <span>Swift</span>
+              <span>macOS</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="supporting-note">I also keep a Raspberry Pi dashboard and home-lab tools around for live personal data, local services, and small experiments in self-hosting.</p>
+      </section>
+
+      <section class="section outside-lab" id="outside">
+        <div class="section-heading">
+          <p class="eyebrow">Outside the lab</p>
+          <h2>Things I keep coming back to.</h2>
+        </div>
+
+        <div class="interest-grid">
+          <article class="interest-card">
+            <h3>Drawing and visual ideas</h3>
+            <p>Small sketches, comic-like characters, manga-inspired studies, and turning visual references into something handmade.</p>
+          </article>
+          <article class="interest-card">
+            <h3>Books, manga, and films</h3>
+            <p>Science fiction, physics books, Vinland Saga, Vagabond, Dune, Perfect Days, Tenet, and stories that make craft feel visible.</p>
+          </article>
+          <article class="interest-card">
+            <h3>Games and systems</h3>
+            <p>Strategy games, old Zelda and Pokemon, retro handhelds, self-hosted dashboards, and the pleasing machinery of personal tools.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Say hello.</h2>
+            <p>Reach out about silicon sensors, detector simulations, physics tools, or small systems that make research life easier.</p>
+          </div>
+          <div class="contact-links" aria-label="Contact links">
+            <a href="mailto:alfonso.puicercus@gmail.com">alfonso.puicercus@gmail.com</a>
+            <a href="https://github.com/alfonsopuicercus" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://ch.linkedin.com/in/alfonso-puicercus" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 
-  <footer>
-    <div class="container">
-      Alfonso Puicercus · CERN · 2026
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span>Alfonso Puicercus</span>
+      <span>CERN · 2026</span>
     </div>
   </footer>
-
 </body>
 </html>
