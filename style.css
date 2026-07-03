@@ -189,20 +189,13 @@ h1 {
   border: 1px solid rgba(23, 61, 109, 0.16);
   border-radius: var(--radius);
   background:
-    radial-gradient(circle at 84% 16%, rgba(27, 168, 200, 0.2), transparent 28%),
+    radial-gradient(circle at 84% 16%, rgba(27, 168, 200, 0.12), transparent 30%),
     linear-gradient(145deg, #ffffff 0%, #f2f8fc 100%);
   box-shadow: var(--shadow);
 }
 
 .signal-card::after {
-  content: "";
-  position: absolute;
-  inset: auto -12% 34px 16%;
-  height: 82px;
-  background:
-    linear-gradient(90deg, transparent 0 8%, var(--cyan) 8% 10%, transparent 10% 26%, var(--cyan) 26% 29%, transparent 29% 48%, var(--warm) 48% 50%, transparent 50% 100%);
-  opacity: 0.35;
-  clip-path: polygon(0 58%, 12% 58%, 18% 28%, 27% 78%, 36% 42%, 47% 42%, 52% 16%, 61% 70%, 72% 38%, 100% 38%, 100% 44%, 74% 44%, 61% 82%, 51% 28%, 48% 50%, 38% 50%, 27% 88%, 18% 42%, 14% 64%, 0 64%);
+  content: none;
 }
 
 .signal-line {
