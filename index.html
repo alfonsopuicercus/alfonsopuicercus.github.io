@@ -3,373 +3,434 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alfonso Puicercus — CERN PhD student working on fast 3D silicon sensors, detector R&D, computational methods, and technical systems for research." />
-  <title>Alfonso Puicercus</title>
+  <meta name="description" content="Alfonso Puicercus is a CERN PhD researcher working on fast 3D silicon sensors, detector simulation, characterisation, and practical technical projects." />
+  <meta name="theme-color" content="#11161d" />
+  <title>Alfonso Puicercus | Particle Physics &amp; Detector R&amp;D</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=20260714-2" />
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-hero">
-      <nav class="topbar" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Alfonso Puicercus home">AP</a>
-        <div class="nav-links">
-          <a href="#research">Research</a>
-          <a href="#events">Events</a>
-          <a href="#outreach">Outreach</a>
-          <a href="#projects">Projects</a>
-          <a href="#outside">Outside</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-      <div class="hero-grid" id="top">
+  <header class="site-header" id="top">
+    <nav class="topbar" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Alfonso Puicercus home">
+        <span class="brand-mark" aria-hidden="true">AP</span>
+        <span class="brand-name">Alfonso Puicercus</span>
+      </a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#work">Work</a>
+        <a href="#events">Events</a>
+        <a href="#projects">Projects</a>
+        <a href="#outside">Life</a>
+      </div>
+      <a class="nav-contact" href="mailto:alfonso.puicercus.work@gmail.com">Contact</a>
+    </nav>
+
+    <div class="hero-media">
+      <img src="assets/timepix4-telescope.jpg" alt="Timepix4 detector telescope and readout equipment at CERN" fetchpriority="high" />
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
         <div class="hero-copy">
-          <h1>Alfonso Puicercus</h1>
-          <p class="hero-title">CERN PhD student working on timing-aware detector simulations for LHCb VELO Upgrade 2, with a parallel interest in computational tools and technical systems for research.</p>
-          <p class="hero-text">My research connects 3D silicon sensor design, TCAD electric-field simulation, Garfield++ signal modelling, and detector characterisation studies. Beyond detector R&amp;D, I enjoy delving into physics, computational methods, and technically minded projects that make complex ideas easier to explore and use.</p>
-          <div class="hero-actions" aria-label="Primary links">
-            <a href="https://github.com/alfonsopuicercus" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://ch.linkedin.com/in/alfonso-puicercus" target="_blank" rel="noopener">LinkedIn</a>
+          <h1>Alfonso<br />Puicercus</h1>
+          <p class="hero-title">Particle physicist and PhD researcher developing fast 3D silicon sensors for the LHCb VELO Upgrade 2.</p>
+          <p class="hero-text">At CERN, I connect device simulation, signal modelling, and detector characterisation. Beyond the lab, I build useful technical projects and enjoy exploring how things work.</p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a href="https://github.com/alfonsopuicercus" target="_blank" rel="noopener">GitHub <span aria-hidden="true">&#8599;</span></a>
+            <a href="https://ch.linkedin.com/in/alfonso-puicercus" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">&#8599;</span></a>
             <a href="mailto:alfonso.puicercus.work@gmail.com">Email</a>
           </div>
         </div>
+        <div class="hero-context" aria-label="Research context">
+          <div>
+            <span>Based at</span>
+            <strong>CERN, Geneva</strong>
+          </div>
+          <div>
+            <span>Collaboration</span>
+            <strong>LHCb VELO Upgrade 2</strong>
+          </div>
+          <div>
+            <span>University</span>
+            <strong>University of Groningen</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-        <aside class="signal-card" aria-label="Research snapshot">
-          <span class="signal-line" aria-hidden="true"></span>
-          <p class="signal-label">Current focus</p>
-          <h2>Fast 3D sensors for high-rate particle tracking</h2>
-          <p>Exploring how geometry, fields, and charge transport shape the timing response of silicon detectors before devices are manufactured and tested.</p>
-          <dl class="signal-facts">
+  <main id="main-content">
+    <section class="intro-band" aria-labelledby="focus-title">
+      <div class="section-inner intro-grid">
+        <figure class="profile-photo">
+          <img src="assets/alfonso-cern.jpg" alt="Alfonso Puicercus standing beside CERN accelerator equipment" decoding="async" />
+        </figure>
+        <div class="intro-copy">
+          <p class="section-label">Current focus</p>
+          <h2 id="focus-title">From electric fields in silicon to the signals seen by a detector.</h2>
+          <p>I am exploring how sensor geometry, electric fields, and charge transport shape timing performance before a device is manufactured and tested. The work sits between simulation and measurement, with both sides informing the other.</p>
+          <dl class="focus-facts">
             <div>
-              <dt>Tools</dt>
-              <dd>TCAD · Garfield++ · Python</dd>
+              <dt>Device</dt>
+              <dd>3D silicon sensors</dd>
             </div>
             <div>
-              <dt>Context</dt>
-              <dd>LHCb VELO Upgrade 2 · CERN EP R&amp;D · University of Groningen</dd>
+              <dt>Methods</dt>
+              <dd>TCAD, Garfield++, Python</dd>
+            </div>
+            <div>
+              <dt>Validation</dt>
+              <dd>OPTIMA, Timepix4, test beams</dd>
             </div>
           </dl>
-        </aside>
+        </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section class="section research-lines" id="research">
-        <div class="section-heading">
-          <p class="eyebrow">Research lines</p>
-          <h2>From sensor geometry to induced signal.</h2>
-          <p>I work on the chain that connects a proposed 3D silicon sensor design to the signal a particle would leave in a future vertex detector.</p>
-        </div>
+    <section class="section research-section" id="research" aria-labelledby="research-title">
+      <div class="section-inner">
+        <header class="section-header section-header-split">
+          <div>
+            <p class="section-label">Research</p>
+            <h2 id="research-title">One detector, viewed at three scales.</h2>
+          </div>
+          <p>My PhD follows the full chain from a proposed sensor geometry to the induced signal, then back to the measurements that test the assumptions.</p>
+        </header>
 
-        <div class="research-grid">
-          <article class="research-line">
-            <span class="line-index">01</span>
-            <figure class="line-visual line-visual-contain">
-              <img src="assets/tcad-3d-sensor-mesh.jpg" alt="TCAD mesh and doping view of a 3D silicon pixel sensor" />
+        <div class="research-layout">
+          <article class="research-card research-card-wide">
+            <figure class="research-media research-media-contain">
+              <img src="assets/tcad-3d-sensor-mesh.jpg" alt="TCAD mesh view of a 3D silicon pixel sensor" loading="lazy" decoding="async" />
             </figure>
-            <h3>TCAD device simulation</h3>
-            <p>Parametrised 3D sensor models, electric-field maps, depletion behaviour, and charge collection studies for candidate geometries.</p>
+            <div class="research-copy">
+              <p class="card-index">01 / Device</p>
+              <h3>TCAD device simulation</h3>
+              <p>Parametrised 3D sensor models for studying electric fields, depletion, geometry, and charge collection across candidate designs and operating conditions.</p>
+            </div>
           </article>
-          <article class="research-line">
-            <span class="line-index">02</span>
-            <figure class="line-visual line-visual-contain">
-              <img src="assets/garfield-track-drift.gif" alt="Animated Garfield charge drift through a 3D silicon sensor" />
+
+          <article class="research-card research-card-tall">
+            <figure class="research-media research-media-contain research-media-dark">
+              <img src="assets/garfield-track-drift.gif" alt="Animated Garfield++ charge drift through a 3D silicon sensor" loading="lazy" decoding="async" />
             </figure>
-            <h3>Garfield++ signal modelling</h3>
-            <p>Transporting charge through simulated fields to estimate induced current, timing response, and spatial performance before fabrication.</p>
+            <div class="research-copy">
+              <p class="card-index">02 / Signal</p>
+              <h3>Garfield++ signal modelling</h3>
+              <p>Transporting charge through simulated fields to estimate induced current, timing response, and spatial performance before fabrication.</p>
+            </div>
           </article>
-          <article class="research-line">
-            <span class="line-index">03</span>
-            <figure class="line-visual">
-              <img src="assets/timepix4-telescope.jpg" alt="Timepix4 telescope setup used for detector characterisation" />
+
+          <article class="research-card research-card-full">
+            <figure class="research-media">
+              <img src="assets/timepix4-telescope.jpg" alt="Timepix4 telescope setup used for detector characterisation" loading="lazy" decoding="async" />
             </figure>
-            <h3>Characterisation context</h3>
-            <p>Connecting simulation assumptions to OPTIMA, Timepix4, laser and test-beam work, and production discussions with sensor partners.</p>
+            <div class="research-copy">
+              <p class="card-index">03 / Measurement</p>
+              <h3>Detector characterisation</h3>
+              <p>Connecting simulation assumptions to OPTIMA, Timepix4, laser and test-beam measurements, and to production discussions with sensor partners.</p>
+            </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section selected-work">
-        <div class="section-heading">
-          <p class="eyebrow">Chronological selected work</p>
-          <h2>Detector R&amp;D, papers, and simulation infrastructure.</h2>
-          <p>A chronological thread of thesis work, current writing, and the simulation infrastructure behind my PhD.</p>
-        </div>
+    <section class="section work-section" id="work" aria-labelledby="work-title">
+      <div class="section-inner">
+        <header class="section-header section-header-split">
+          <div>
+            <p class="section-label">Selected work</p>
+            <h2 id="work-title">A chronological path through the physics.</h2>
+          </div>
+          <p>From cosmology and detector characterisation to the simulation infrastructure behind my current research.</p>
+        </header>
 
-        <div class="research-visuals" aria-label="Selected simulation figures">
-          <figure class="research-figure">
-            <img src="assets/paper-simulation-volume.png" alt="Simulation volume and weighting potential for 3D silicon pixel sensors" />
-            <figcaption>General 3D sensor simulation volume and weighting-potential view from the detector-simulation paper.</figcaption>
+        <div class="work-figures" aria-label="Selected research figures">
+          <figure>
+            <img src="assets/paper-simulation-volume.png" alt="Simulation volume and weighting potential for a 3D silicon pixel sensor" loading="lazy" decoding="async" />
+            <figcaption>Simulation volume and weighting-potential view used in detector-simulation work.</figcaption>
           </figure>
-          <figure class="research-figure">
-            <img src="assets/optima-density-seed.png" alt="OPTIMA MKV seed-readout density plot" />
+          <figure>
+            <img src="assets/optima-density-seed.png" alt="OPTIMA MKV seed-readout density plot" loading="lazy" decoding="async" />
             <figcaption>OPTIMA MKV seed-readout density map from detector-characterisation studies.</figcaption>
           </figure>
         </div>
 
-        <div class="work-list">
-          <article class="work-card">
-            <div>
-              <p class="work-meta">2022 · Bachelor thesis · CMB</p>
-              <h3><a href="https://fse.studenttheses.ub.rug.nl/27719/1/bPHYS_2022_PuicercusA.pdf" target="_blank" rel="noopener">Two-fluid approximation for CMB power spectrum</a></h3>
+        <ol class="timeline">
+          <li class="timeline-entry">
+            <time datetime="2022">2022</time>
+            <div class="timeline-copy">
+              <p class="timeline-type">Bachelor thesis · Cosmology</p>
+              <h3><a href="https://fse.studenttheses.ub.rug.nl/27719/1/bPHYS_2022_PuicercusA.pdf" target="_blank" rel="noopener">Two-fluid approximation for the CMB power spectrum</a></h3>
+              <p>Computing the cosmic microwave background power spectrum using a two-fluid approximation.</p>
             </div>
-            <p>Bachelor's thesis work on computing the cosmic microwave background power spectrum using a two-fluid approximation.</p>
-          </article>
-          <article class="work-card">
-            <div>
-              <p class="work-meta">2024 · Master thesis · Velopix</p>
-              <h3><a href="https://fse.studenttheses.ub.rug.nl/33675/1/mPHYS2024PuicercusA.pdf" target="_blank" rel="noopener">Velopix detector characterisation</a></h3>
+          </li>
+          <li class="timeline-entry">
+            <time datetime="2024">2024</time>
+            <div class="timeline-copy">
+              <p class="timeline-type">Master thesis · Detector physics</p>
+              <h3><a href="https://fse.studenttheses.ub.rug.nl/33675/1/mPHYS2024PuicercusA.pdf" target="_blank" rel="noopener">Characterisation of a Velopix detector</a></h3>
+              <p>Analysis and detector characterisation connecting measured behaviour to physical device parameters.</p>
             </div>
-            <p>Analysis framework and detector characterisation work from my master's thesis, connecting measured behaviour to physical parameters.</p>
-          </article>
-          <article class="work-card">
-            <div>
-              <p class="work-meta">2026 · JINST proceedings</p>
-              <h3>Simulation results for fast 3D sensor studies</h3>
+          </li>
+          <li class="timeline-entry">
+            <time datetime="2026">2026</time>
+            <div class="timeline-copy">
+              <p class="timeline-type">Proceedings · JINST</p>
+              <h3>Simulation studies for fast 3D silicon sensors</h3>
+              <p>A proceedings contribution bringing together the TCAD and Garfield++ results presented at TREDI.</p>
             </div>
-            <p>Proceedings contribution gathering current TCAD and Garfield++ results from the TREDI work.</p>
-          </article>
-          <article class="work-card">
-            <div>
-              <p class="work-meta">2026-present · TCAD / Garfield++</p>
+          </li>
+          <li class="timeline-entry timeline-entry-current">
+            <time datetime="2026">Now</time>
+            <div class="timeline-copy">
+              <p class="timeline-type">PhD research · CERN</p>
               <h3>3D sensor simulation suite</h3>
+              <p>Parametrised device models, field extraction, and downstream signal simulations for comparing layouts and operating conditions.</p>
             </div>
-            <p>Parametrised device models, field extraction, and downstream signal simulations for comparing sensor layouts and operating conditions.</p>
-          </article>
-        </div>
-      </section>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-      <section class="section events" id="events">
-        <div class="section-heading">
-          <p class="eyebrow">Events</p>
-          <h2>Schools, meetings, and poster presentations.</h2>
-          <p>Places where the research has been discussed, presented, or developed through focused detector communities.</p>
-        </div>
+    <section class="section events-section" id="events" aria-labelledby="events-title">
+      <div class="section-inner">
+        <header class="section-header section-header-split section-header-inverse">
+          <div>
+            <p class="section-label">Events</p>
+            <h2 id="events-title">Presentations and detector communities.</h2>
+          </div>
+          <p>Schools and meetings where the work has been developed, discussed, and presented.</p>
+        </header>
 
-        <div class="work-list">
-          <article class="work-card">
-            <div>
-              <p class="work-meta">October 2025 · SIMDET School · Paris</p>
-              <h3><a href="https://indico.in2p3.fr/event/36667/" target="_blank" rel="noopener">Silicon detector simulation school</a></h3>
-            </div>
-            <div>
-              <p>Attended the intensive SIMDET school on semiconductor detectors and simulation tools, with lectures, real research and industry use cases, and hands-on sessions with detector simulation experts.</p>
-              <div class="inline-links" aria-label="SIMDET school link">
-                <a href="https://indico.in2p3.fr/event/36667/" target="_blank" rel="noopener">Event</a>
-              </div>
+        <div class="event-list">
+          <article class="event-row">
+            <div class="event-date"><span>Oct</span><strong>2025</strong></div>
+            <div class="event-place">Paris, France</div>
+            <div class="event-copy">
+              <h3><a href="https://indico.in2p3.fr/event/36667/" target="_blank" rel="noopener">SIMDET School</a></h3>
+              <p>An intensive school on semiconductor detectors and simulation tools, combining lectures, research use cases, and hands-on sessions.</p>
+              <a class="text-link" href="https://indico.in2p3.fr/event/36667/" target="_blank" rel="noopener">Event page <span aria-hidden="true">&#8599;</span></a>
             </div>
           </article>
-          <article class="work-card">
-            <div>
-              <p class="work-meta">November 2025 · NNV Fall Meeting · Netherlands</p>
+
+          <article class="event-row">
+            <div class="event-date"><span>Nov</span><strong>2025</strong></div>
+            <div class="event-place">Netherlands</div>
+            <div class="event-copy">
               <h3><a href="https://indico.nikhef.nl/event/6662/contributions/27499/attachments/10295/15626/NNV%2007_11_25%20(1).pdf" target="_blank" rel="noopener">NNV Section for (Astro)Particle Physics Fall Meeting</a></h3>
+              <p>Presented work on 3D silicon sensor simulation, detector characterisation, and electronics to the Dutch subatomic physics community.</p>
+              <a class="text-link" href="https://indico.nikhef.nl/event/6662/contributions/27499/attachments/10295/15626/NNV%2007_11_25%20(1).pdf" target="_blank" rel="noopener">Slides PDF <span aria-hidden="true">&#8599;</span></a>
             </div>
-            <div>
-              <p>Presented work on 3D silicon sensor simulation, detector characterisation, and electronics at the annual meeting of the Subatomic Physics Section of the Dutch Physical Society.</p>
-              <div class="inline-links" aria-label="NNV Fall Meeting link">
-                <a href="https://indico.nikhef.nl/event/6662/contributions/27499/attachments/10295/15626/NNV%2007_11_25%20(1).pdf" target="_blank" rel="noopener">Slides PDF</a>
+          </article>
+
+          <article class="event-row">
+            <div class="event-date"><span>Feb</span><strong>2026</strong></div>
+            <div class="event-place">Perugia, Italy</div>
+            <div class="event-copy">
+              <h3><a href="https://indico.cern.ch/event/1586892/contributions/6846257/" target="_blank" rel="noopener">TREDI 2026</a></h3>
+              <p>Poster on simulation-driven development of 3D silicon pixel sensors for the timing requirements of the LHCb VELO Upgrade 2.</p>
+              <div class="link-row">
+                <a class="text-link" href="https://indico.cern.ch/event/1586892/contributions/6846257/" target="_blank" rel="noopener">Contribution <span aria-hidden="true">&#8599;</span></a>
+                <a class="text-link" href="https://indico.cern.ch/event/1586892/contributions/6846257/attachments/3221236/5740234/Trento_Poster_alfonso_puicercus_gomez.pdf" target="_blank" rel="noopener">Poster PDF <span aria-hidden="true">&#8599;</span></a>
               </div>
             </div>
           </article>
-          <article class="work-card">
-            <div>
-              <p class="work-meta">February 2026 · TREDI · Perugia</p>
-              <h3><a href="https://indico.cern.ch/event/1586892/contributions/6846257/" target="_blank" rel="noopener">Development and Simulation of 3D Silicon Pixel Sensors for the LHCb VELO Upgrade 2</a></h3>
-            </div>
-            <div>
-              <p>Poster contribution at the 21st Trento Workshop on Advanced Silicon Radiation Detectors, presenting simulation-driven development of 3D silicon sensors for the timing requirements of a future LHCb vertex detector.</p>
-              <div class="inline-links" aria-label="TREDI 2026 links">
-                <a href="https://indico.cern.ch/event/1586892/contributions/6846257/" target="_blank" rel="noopener">Contribution</a>
-                <a href="https://indico.cern.ch/event/1586892/contributions/6846257/attachments/3221236/5740234/Trento_Poster_alfonso_puicercus_gomez.pdf" target="_blank" rel="noopener">Poster PDF</a>
-              </div>
-            </div>
-          </article>
-          <article class="work-card">
-            <div>
-              <p class="work-meta">April 2026 · EP R&amp;D Day · CERN</p>
-              <h3><a href="https://indico.cern.ch/event/1653495/contributions/7055332/attachments/3265888/5832805/Trento_Poster_alfonso_puicercus_gomez%20(2).pdf" target="_blank" rel="noopener">3D silicon pixel sensors for future detector R&amp;D</a></h3>
-            </div>
-            <div>
-              <p>Poster presented during CERN's EP R&amp;D Day, a programme-wide meeting on detector technologies for future experiments, including silicon sensors, electronics, mechanics, cooling, software, and system integration.</p>
-              <div class="inline-links" aria-label="EP R&D Day links">
-                <a href="https://ep-news.web.cern.ch/content/ep-rd-day-2026-technologies-next-generation-experiments" target="_blank" rel="noopener">EP News</a>
-                <a href="https://indico.cern.ch/event/1653495/" target="_blank" rel="noopener">Event</a>
-                <a href="https://indico.cern.ch/event/1653495/contributions/7055332/attachments/3265888/5832805/Trento_Poster_alfonso_puicercus_gomez%20(2).pdf" target="_blank" rel="noopener">Poster PDF</a>
+
+          <article class="event-row">
+            <div class="event-date"><span>Apr</span><strong>2026</strong></div>
+            <div class="event-place">CERN, Geneva</div>
+            <div class="event-copy">
+              <h3><a href="https://indico.cern.ch/event/1653495/" target="_blank" rel="noopener">CERN EP R&amp;D Day</a></h3>
+              <p>Presented a poster on 3D silicon pixel sensors during a programme-wide meeting on detector technologies for future experiments.</p>
+              <div class="link-row">
+                <a class="text-link" href="https://ep-news.web.cern.ch/content/ep-rd-day-2026-technologies-next-generation-experiments" target="_blank" rel="noopener">EP News <span aria-hidden="true">&#8599;</span></a>
+                <a class="text-link" href="https://indico.cern.ch/event/1653495/contributions/7055332/attachments/3265888/5832805/Trento_Poster_alfonso_puicercus_gomez%20(2).pdf" target="_blank" rel="noopener">Poster PDF <span aria-hidden="true">&#8599;</span></a>
               </div>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section outreach" id="outreach">
-        <div class="section-heading">
-          <p class="eyebrow">Outreach</p>
-          <h2>Sharing the path into physics.</h2>
-          <p>I like making the route into science feel visible, especially for younger students from places where an international research path can feel distant.</p>
-        </div>
+    <section class="section outreach-section" id="outreach" aria-labelledby="outreach-title">
+      <div class="section-inner">
+        <header class="section-header section-header-split">
+          <div>
+            <p class="section-label">Outreach</p>
+            <h2 id="outreach-title">Making a route into science feel possible.</h2>
+          </div>
+          <p>I enjoy sharing both the physics and the less visible path behind an international research career.</p>
+        </header>
 
-        <div class="interest-grid">
-          <article class="interest-card article-card">
-            <h3>La Rioja interview</h3>
-            <img class="article-image" src="assets/la-rioja-newspaper.jpg" alt="La Rioja newspaper interview page featuring Alfonso Puicercus at CERN" />
-            <p>Interviewed by a newspaper from La Rioja about studying physics, moving abroad, and starting a research path at CERN.</p>
-            <div class="inline-links" aria-label="La Rioja interview link">
-              <a href="https://www.larioja.com/la-rioja/alfonso-puicercus-fisico-cern-riojano-20251028165820-nt.html" target="_blank" rel="noopener">Interview</a>
+        <div class="outreach-grid">
+          <article class="outreach-story newspaper-story">
+            <figure class="newspaper-frame">
+              <img src="assets/la-rioja-newspaper.jpg" alt="La Rioja newspaper interview with Alfonso Puicercus at CERN" loading="lazy" decoding="async" />
+            </figure>
+            <div class="story-copy">
+              <p class="story-date">La Rioja · November 2025</p>
+              <h3>From Logroño to CERN</h3>
+              <p>An interview about studying physics, moving abroad, and starting a research path at CERN, as well as the detector technology behind the work.</p>
+              <a class="text-link text-link-dark" href="https://www.larioja.com/la-rioja/alfonso-puicercus-fisico-cern-riojano-20251028165820-nt.html" target="_blank" rel="noopener">Read the interview <span aria-hidden="true">&#8599;</span></a>
             </div>
           </article>
-          <article class="interest-card">
-            <h3>DivulgaCiencia 2025</h3>
-            <p>Gave a talk at my former high school through Divulgaciencia 2025, aiming to encourage students to pursue science, study abroad, and follow ambitious ideas.</p>
-            <div class="inline-links" aria-label="Divulgaciencia talk link">
-              <a href="https://www.fundacion-cajarioja.es/educacion-y-cultura/programa-divulgaciencia/talleres-para-escolares-2/" target="_blank" rel="noopener">Divulgaciencia</a>
+
+          <article class="outreach-story school-story">
+            <div class="school-number" aria-hidden="true">2025</div>
+            <div class="story-copy">
+              <p class="story-date">DivulgaCiencia · La Rioja</p>
+              <h3>A science talk at my former high school</h3>
+              <p>I returned to speak with students about physics, studying abroad, and following ambitious ideas even when the route is not immediately obvious.</p>
+              <a class="text-link text-link-dark" href="https://www.fundacion-cajarioja.es/educacion-y-cultura/programa-divulgaciencia/talleres-para-escolares-2/" target="_blank" rel="noopener">DivulgaCiencia programme <span aria-hidden="true">&#8599;</span></a>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section built-projects" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Built for curiosity</p>
-          <h2>Side projects where physics, automation, and personal systems meet.</h2>
-          <p>Most of my projects start from the same itch: make an abstract system visible, controllable, or easier to reason about.</p>
-        </div>
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-inner">
+        <header class="section-header section-header-split">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2 id="projects-title">Tools built from curiosity and daily use.</h2>
+          </div>
+          <p>Software for interactive physics, research organisation, automation, and the personal systems I use every day.</p>
+        </header>
 
         <div class="project-grid">
-          <article class="project-card featured physim-card">
-            <img class="project-preview physim-logo-preview" src="assets/physim-logo-lorenz.png" alt="PhysimLab logo" />
-            <div class="project-topline">
+          <article class="project-card project-physim">
+            <figure class="project-media project-media-dark">
+              <img src="assets/physim-logo-lorenz.png" alt="PhysimLab interactive physics logo" loading="lazy" decoding="async" />
+            </figure>
+            <div class="project-copy">
+              <p class="project-kind">Interactive physics</p>
               <h3><a href="https://physimlab.pages.dev/" target="_blank" rel="noopener">Physim</a></h3>
-              <span>Physics simulations</span>
-            </div>
-            <p>Interactive browser simulations paired with Physim Lab, a Python desktop framework for research-grade models and shared `.physim` scenarios.</p>
-            <div class="tag-list" aria-label="Physim stack">
-              <a href="https://physimlab.pages.dev/" target="_blank" rel="noopener">Live site</a>
-              <a href="https://github.com/alfonsopuicercus/physicslab" target="_blank" rel="noopener">Code</a>
-              <span>HTML/CSS/JS</span>
-              <span>Python</span>
+              <p>Browser simulations paired with a Python desktop framework for research-grade models and reusable <code>.physim</code> scenarios.</p>
+              <div class="project-links">
+                <a href="https://physimlab.pages.dev/" target="_blank" rel="noopener">Live site <span aria-hidden="true">&#8599;</span></a>
+                <a href="https://github.com/alfonsopuicercus/physicslab" target="_blank" rel="noopener">Source <span aria-hidden="true">&#8599;</span></a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card source-relay-card">
-            <img class="project-preview source-relay-preview" src="assets/sourcerelay-sources.png" alt="SourceRelay Sources settings screenshot" />
-            <div class="project-topline">
+          <article class="project-card project-source-relay">
+            <figure class="project-media">
+              <img src="assets/sourcerelay-sources.png" alt="SourceRelay application sources settings" loading="lazy" decoding="async" />
+            </figure>
+            <div class="project-copy">
+              <p class="project-kind">macOS · Swift</p>
               <h3><a href="https://github.com/alfonsopuicercus/source-relay" target="_blank" rel="noopener">SourceRelay</a></h3>
-              <span>Personal data bridge</span>
-            </div>
-            <p>A local macOS bridge that turns Calendar, Things 3, and Obsidian into one clean API for personal dashboards.</p>
-            <div class="tag-list" aria-label="SourceRelay stack">
-              <span>Swift</span>
-              <span>macOS</span>
+              <p>A local bridge that turns Calendar, Things 3, and Obsidian into one clean API for personal dashboards.</p>
+              <div class="project-links">
+                <a href="https://github.com/alfonsopuicercus/source-relay" target="_blank" rel="noopener">Source <span aria-hidden="true">&#8599;</span></a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card vault-card">
-            <img class="project-preview vault-preview" src="assets/research-os-vault-screenshot.png" alt="Research OS Vault Template screenshot in Obsidian" />
-            <div class="project-topline">
+          <article class="project-card project-vault">
+            <figure class="project-media">
+              <img src="assets/research-os-vault-screenshot.png" alt="Research OS Vault Template open in Obsidian" loading="lazy" decoding="async" />
+            </figure>
+            <div class="project-copy">
+              <p class="project-kind">Obsidian · Research systems</p>
               <h3><a href="https://github.com/alfonsopuicercus/research-os-vault-template" target="_blank" rel="noopener">Research OS Vault Template</a></h3>
-              <span>Obsidian system</span>
-            </div>
-            <p>A public Obsidian vault template for scientific and technical knowledge work, built around PARA, research dashboards, daily notes, and AI-readable context files.</p>
-            <div class="tag-list" aria-label="Research OS Vault Template stack">
-              <span>Obsidian</span>
-              <span>PARA</span>
-              <span>Templates</span>
-              <span>AI setup</span>
+              <p>A public vault template built around PARA, research dashboards, daily notes, and AI-readable context.</p>
+              <div class="project-links">
+                <a href="https://github.com/alfonsopuicercus/research-os-vault-template" target="_blank" rel="noopener">Source <span aria-hidden="true">&#8599;</span></a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
+          <article class="project-card project-compact">
+            <div class="project-copy">
+              <p class="project-kind">Python · Automation</p>
               <h3><a href="https://github.com/alfonsopuicercus/vikunja-telegram-bot" target="_blank" rel="noopener">Vikunja Telegram Bot</a></h3>
-              <span>Task automation</span>
-            </div>
-            <p>A Telegram interface for managing Vikunja tasks, built around quick capture and lightweight task-system control from chat.</p>
-            <div class="tag-list" aria-label="Vikunja Telegram Bot stack">
-              <span>Python</span>
-              <span>Telegram</span>
-              <span>Vikunja</span>
+              <p>A chat interface for quick task capture and lightweight control of a Vikunja task system.</p>
+              <div class="project-links">
+                <a href="https://github.com/alfonsopuicercus/vikunja-telegram-bot" target="_blank" rel="noopener">Source <span aria-hidden="true">&#8599;</span></a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-topline">
+          <article class="project-card project-compact project-cmb">
+            <div class="project-copy">
+              <p class="project-kind">Python · Cosmology</p>
               <h3><a href="https://github.com/alfonsopuicercus/CMB-Power-Spectrum" target="_blank" rel="noopener">CMB Power Spectrum</a></h3>
-              <span>Bachelor code</span>
-            </div>
-            <p>Code from my bachelor's thesis for computing the cosmic microwave background power spectrum using a two-fluid approximation.</p>
-            <div class="tag-list" aria-label="CMB Power Spectrum stack">
-              <span>Jupyter</span>
-              <span>Python</span>
-              <span>Cosmology</span>
+              <p>Code from my bachelor thesis for computing the CMB power spectrum with a two-fluid approximation.</p>
+              <div class="project-links">
+                <a href="https://github.com/alfonsopuicercus/CMB-Power-Spectrum" target="_blank" rel="noopener">Source <span aria-hidden="true">&#8599;</span></a>
+              </div>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section outside-lab" id="outside">
-        <div class="section-heading">
-          <p class="eyebrow">Outside the lab</p>
-          <h2>Things I keep coming back to.</h2>
-        </div>
+    <section class="section outside-section" id="outside" aria-labelledby="outside-title">
+      <div class="section-inner">
+        <header class="section-header section-header-split">
+          <div>
+            <p class="section-label">Outside the lab</p>
+            <h2 id="outside-title">Mountains, water, cities, and good devices.</h2>
+          </div>
+          <p>I like moving around the world and exploring places nearby or far away. Skiing, hiking, swimming, the gym, and a steady interest in technology keep the rest of life in motion.</p>
+        </header>
 
-        <div class="outside-gallery" aria-label="Outside the lab photo gallery">
-          <figure class="outside-photo outside-photo-tall">
-            <img src="assets/outside-skiing.jpg" alt="Skiing in the mountains under a clear blue sky" />
+        <div class="life-gallery" aria-label="Personal photo gallery">
+          <figure class="life-photo life-photo-ski">
+            <img src="assets/outside-skiing.jpg" alt="Skiing in the mountains under a clear blue sky" loading="lazy" decoding="async" />
             <figcaption>Skiing</figcaption>
           </figure>
-          <figure class="outside-photo outside-photo-tall">
-            <img src="assets/outside-hiking.jpg" alt="Winter hiking through snowy mountain terrain" />
+          <figure class="life-photo life-photo-hike">
+            <img src="assets/outside-hiking.jpg" alt="Winter hiking through snowy mountain terrain" loading="lazy" decoding="async" />
             <figcaption>Hiking</figcaption>
           </figure>
-          <figure class="outside-photo">
-            <img src="assets/outside-lake.jpg" alt="Lake surface under a dramatic sky" />
-            <figcaption>Lakes</figcaption>
-          </figure>
-          <figure class="outside-photo">
-            <img src="assets/outside-nature-ice.jpg" alt="Blue ice formations inside a glacier cave" />
+          <figure class="life-photo life-photo-ice">
+            <img src="assets/outside-nature-ice.jpg" alt="Blue ice formations inside a glacier cave" loading="lazy" decoding="async" />
             <figcaption>Nature</figcaption>
           </figure>
-          <figure class="outside-photo">
-            <img src="assets/outside-city-harbor.jpg" alt="Harbor city view with boats and blue sky" />
+          <figure class="life-photo life-photo-city">
+            <img src="assets/outside-city-harbor.jpg" alt="Harbour city with boats under a blue sky" loading="lazy" decoding="async" />
             <figcaption>Cities</figcaption>
+          </figure>
+          <figure class="life-photo life-photo-lake">
+            <img src="assets/outside-lake.jpg" alt="Lake surface under a dramatic sky" loading="lazy" decoding="async" />
+            <figcaption>Water</figcaption>
           </figure>
         </div>
 
-        <div class="outside-notes">
-          <article class="interest-card">
-            <h3>Moving around the world</h3>
-            <p>I enjoy moving through new places and exploring cities, landscapes, and everyday environments, whether they are nearby or far away.</p>
-          </article>
-          <article class="interest-card">
-            <h3>Geek things and devices</h3>
-            <p>Small devices, retro handhelds, self-hosted dashboards, home-lab experiments, and the pleasing machinery of personal tools.</p>
-          </article>
+        <div class="outside-note">
+          <p>And then there are the things I keep inspecting for no practical reason at all: retro handhelds, compact computers, self-hosted tools, clever interfaces, and devices with unusually good engineering.</p>
+          <span>Travel · Nature · Skiing · Hiking · Swimming · Gym · Technology</span>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section contact" id="contact">
-        <div class="contact-panel">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Say hello.</h2>
-            <p>Reach out about silicon sensors, detector simulations, physics tools, or small systems that make research life easier.</p>
-          </div>
-          <div class="contact-links" aria-label="Contact links">
-            <a href="mailto:alfonso.puicercus.work@gmail.com">alfonso.puicercus.work@gmail.com</a>
-            <a href="https://github.com/alfonsopuicercus" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://ch.linkedin.com/in/alfonso-puicercus" target="_blank" rel="noopener">LinkedIn</a>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-inner contact-inner">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2 id="contact-title">Let&apos;s talk physics, detectors, or useful tools.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-email" href="mailto:alfonso.puicercus.work@gmail.com">alfonso.puicercus.work@gmail.com</a>
+          <div class="contact-socials">
+            <a href="https://github.com/alfonsopuicercus" target="_blank" rel="noopener">GitHub <span aria-hidden="true">&#8599;</span></a>
+            <a href="https://ch.linkedin.com/in/alfonso-puicercus" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">&#8599;</span></a>
           </div>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="site-footer">
-    <div class="footer-inner">
+    <div class="section-inner footer-inner">
       <span>Alfonso Puicercus</span>
+      <a href="#top">Back to top</a>
       <span>CERN · 2026</span>
     </div>
   </footer>
