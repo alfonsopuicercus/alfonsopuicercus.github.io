@@ -27,6 +27,16 @@
         <a href="#projects">Projects</a>
         <a href="#outside">Life</a>
       </div>
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation"><span aria-hidden="true">&#9776;</span></summary>
+        <div class="mobile-nav-panel">
+          <a href="#research">Research</a>
+          <a href="#work">Work</a>
+          <a href="#events">Events</a>
+          <a href="#projects">Projects</a>
+          <a href="#outside">Life</a>
+        </div>
+      </details>
       <a class="nav-contact" href="mailto:alfonso.puicercus.work@gmail.com">Contact</a>
     </nav>
 
@@ -147,15 +157,38 @@
           <p>From cosmology and detector characterisation to the simulation infrastructure behind my current research.</p>
         </header>
 
-        <div class="work-figures" aria-label="Selected research figures">
-          <figure>
-            <img src="assets/paper-simulation-volume.png" alt="Simulation volume and weighting potential for a 3D silicon pixel sensor" loading="lazy" decoding="async" />
-            <figcaption>Simulation volume and weighting-potential view used in detector-simulation work.</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/optima-density-seed.png" alt="OPTIMA MKV seed-readout density plot" loading="lazy" decoding="async" />
-            <figcaption>OPTIMA MKV seed-readout density map from detector-characterisation studies.</figcaption>
-          </figure>
+        <div class="work-figures" aria-label="Selected work visuals">
+          <article class="work-figure">
+            <figure class="work-figure-media">
+              <img src="assets/cmb-power-spectrum.png" alt="CMB angular power spectrum with acoustic peaks" loading="lazy" decoding="async" />
+            </figure>
+            <div class="work-figure-copy">
+              <p class="work-figure-kicker">01 / 2022 · Bachelor thesis</p>
+              <h3><a href="https://fse.studenttheses.ub.rug.nl/27719/1/bPHYS_2022_PuicercusA.pdf" target="_blank" rel="noopener">Two-fluid approximation for the CMB power spectrum</a></h3>
+              <p>Exploring how coupled photon-baryon and cold-dark-matter fluids shape the acoustic peaks of the cosmic microwave background.</p>
+              <p class="work-equation" aria-label="Density perturbation equation">&#961; = &#961;&#772;(1 + &#948;)</p>
+            </div>
+          </article>
+          <article class="work-figure">
+            <figure class="work-figure-media work-figure-media-wide">
+              <img src="assets/velopix-gain-comparison.png" alt="Velopix gain comparison for cold and warm detector datasets" loading="lazy" decoding="async" />
+            </figure>
+            <div class="work-figure-copy">
+              <p class="work-figure-kicker">02 / 2024 · Master thesis</p>
+              <h3><a href="https://fse.studenttheses.ub.rug.nl/33675/1/mPHYS2024PuicercusA.pdf" target="_blank" rel="noopener">Characterisation of a Velopix detector</a></h3>
+              <p>Measuring threshold behaviour and gain across cold and warm datasets to understand the response of a pixel detector.</p>
+            </div>
+          </article>
+          <article class="work-figure">
+            <figure class="work-figure-media">
+              <img src="assets/paper-simulation-volume.png" alt="3D silicon pixel sensor simulation volume and weighting potential" loading="lazy" decoding="async" />
+            </figure>
+            <div class="work-figure-copy">
+              <p class="work-figure-kicker">03 / Now · PhD research</p>
+              <h3>3D silicon sensor simulation</h3>
+              <p>Connecting device geometry, electric fields, and charge transport in the simulation chain for the LHCb VELO Upgrade 2.</p>
+            </div>
+          </article>
         </div>
 
         <ol class="timeline">
@@ -434,5 +467,13 @@
       <span>CERN · 2026</span>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('.mobile-nav-panel a').forEach((link) => {
+      link.addEventListener('click', () => {
+        link.closest('.mobile-nav')?.removeAttribute('open');
+      });
+    });
+  </script>
 </body>
 </html>
